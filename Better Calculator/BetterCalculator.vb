@@ -2,12 +2,12 @@
 'RCET0265
 'Spring 2022
 'Better Calculator
-'url here
+'https://github.com/MEBreves/BetterCalculator
 
 Option Explicit On
 Option Strict On
 
-Module BetterCalculator
+Module BetterCalculatorS
 
     Sub Main()
 

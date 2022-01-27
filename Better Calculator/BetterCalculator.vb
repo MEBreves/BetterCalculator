@@ -113,6 +113,7 @@ Module BetterCalculator
 
             Loop Until optionChosen
 
+            'Checking if the user has quit.
             If exitCodeTriggered Then
                 Exit Do
             End If

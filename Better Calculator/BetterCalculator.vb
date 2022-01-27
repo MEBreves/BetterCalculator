@@ -7,7 +7,7 @@
 Option Explicit On
 Option Strict On
 
-Module BetterCalculatorS
+Module BetterCalculator
 
     Sub Main()
 
@@ -25,7 +25,7 @@ Module BetterCalculatorS
 
         Do
 
-            Console.WriteLine("Please enter two numbers. Enter 'Q' at any time to quit.")
+            Console.WriteLine("Please enter two numbers. Enter " & Chr(34) & "Q" & Chr(34) & " at any time to quit.")
             firstIntCleared = False
             secondIntCleared = False
 
@@ -41,9 +41,9 @@ Module BetterCalculatorS
                     Try
                         firstInt = CInt(userInput)
                         firstIntCleared = True
-                        Console.WriteLine($"You entered '{userInput}'")
+                        Console.WriteLine("You entered " & Chr(34) & userInput & Chr(34))
                     Catch ex As Exception
-                        Console.WriteLine($"You entered '{userInput}', please enter a whole number.")
+                        Console.WriteLine("You entered " & Chr(34) & userInput & Chr(34) & ", please enter a whole number.")
                     End Try
                 End If
 
@@ -66,9 +66,9 @@ Module BetterCalculatorS
                     Try
                         secondInt = CInt(userInput)
                         secondIntCleared = True
-                        Console.WriteLine($"You entered '{userInput}'")
+                        Console.WriteLine("You entered " & Chr(34) & userInput & Chr(34))
                     Catch ex As Exception
-                        Console.WriteLine($"You entered '{userInput}', please enter a whole number.")
+                        Console.WriteLine("You entered " & Chr(34) & userInput & Chr(34) & ", please enter a whole number.")
                     End Try
                 End If
 
@@ -87,7 +87,7 @@ Module BetterCalculatorS
                 Console.WriteLine("3. Multiply")
                 Console.WriteLine("4. Divide")
                 userOption = Console.ReadLine()
-                Console.WriteLine($"You entered '{userOption}'")
+                Console.WriteLine("You entered " & Chr(34) & userOption & Chr(34))
 
                 optionChosen = True
 
